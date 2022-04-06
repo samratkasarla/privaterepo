@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') { 
             steps {
-                echo "hello" 
+                sh 'git pull https://github.com/samratkasarla/branchdemo.git master' 
             }
         }
         stage('Test') { 
