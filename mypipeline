@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') { 
             steps {
-            sh 'git pull https://github.com/samratkasarla/privaterepo.git 'gi 
+            sh 'git clone https://github.com/samratkasarla/privaterepo.git 'gi 
             }
         }
         stage('Test') { 
