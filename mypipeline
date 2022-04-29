@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('pull') { 
             steps {
-                echo "build"
+                git 'https://github.com/samratkasarla/studentapp-ui.git'
             }
         }
         stage('build') { 
             steps {
-                echo "build"
+                sh 'mvn clean package'
                 }
         }
         stage('test') { 
